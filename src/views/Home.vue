@@ -4,6 +4,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  mounted () {
+    console.log('11', this.$route)
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .avatar-test {
   display: block;
