@@ -1,6 +1,8 @@
 <template>
   <div class="about">
-    <iframe class="no-avatar" src="https://room.metaspace.place/?id=VGqA5XYbE2T5VVyErabW" frameborder="0"></iframe>
+    <iframe class="no-avatar"
+    src="https://room.metaspace.place/?id=VGqA5XYbE2T5VVyErabW"
+    frameborder="0" allowFullScreen="true"></iframe>
   </div>
 </template>
 

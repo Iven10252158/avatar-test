@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <iframe class="avatar-test" src="https://room.metaspace.place/user/conf?id=7UQ4GRy0FTJcjXlxFeIQ" frameborder="0"></iframe>
+    <iframe class="avatar-test" src="https://room.metaspace.place/user/conf?id=7UQ4GRy0FTJcjXlxFeIQ"
+    allow="geolocation; microphone; camera; midi; encrypted-media;"
+    frameborder="0"></iframe>
   </div>
 </template>
 
