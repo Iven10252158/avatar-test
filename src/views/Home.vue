@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <iframe class="avatar-test" :src="url"
-    allow="geolocation; microphone; camera; midi; encrypted-media;"
+    allow="geolocation; microphone; camera; midi; encrypted-media; allowFullScreen; allowtransparency"
+    allowFullScreen="true" allowtransparency="true" scrolling="no"
     frameborder="0"></iframe>
   </div>
 </template>
@@ -36,9 +37,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.avatar-test {
-  display: block;
-  width: 100%;
-  height: 100vh;
+.home {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  .avatar-test {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

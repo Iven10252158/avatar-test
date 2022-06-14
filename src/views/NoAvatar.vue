@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <iframe class="no-avatar" :src="url"
-    frameborder="0" allowFullScreen="true"></iframe>
+    frameborder="0" allowFullScreen="true" allowtransparency="true" scrolling="no"></iframe>
   </div>
 </template>
 
@@ -33,9 +33,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.no-avatar {
-  display: block;
-  width: 100%;
-  height: 100vh;
+.about {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  .no-avatar {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
+
+// .no-avatar .ios {
+//   min-width: 100%;
+//   width: 1px;
+// }
 </style>
